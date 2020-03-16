@@ -2,14 +2,17 @@
   "name": "all-in-one-template",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "server/start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "DEBUG=index,index:* nodemon server.js"
+    "start": "DEBUG=index,index:* nodemon start.js"
   },
   "author": "pj1301",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/register": "^7.8.6",
     "cors": "^2.8.5",
     "debug": "^4.1.1",
     "express": "^4.17.1",
