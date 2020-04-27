@@ -1,10 +1,14 @@
 # Node Practice Template - ES6
 
+>The master file in this repo contains the code for the ES6 version of the mini-app. For ES5, please clone the ES5 branch - NOTE that this does not have SCSS enabled.
+
 This is a practice template - mostly for server side technologies. Everything will run from the server - there is no need for a separate front end. 
 
 The 'front end' in this example is contained inside the public folder and served by including `app.use(express.static('public'))` in the server back end. It will accept vanilla JavaScript and can be used to create basic components. 
 
 In this version, both front and back ends will accept ES6 imports. 
+
+The front end styles should be applied via the SCSS file inside `public/assets/scss`. If you prefer, you can add new SCSS files inside that folder and import them into the `index.scss` file to ensure they are loaded. The `package.json` file has been configured to compile the SCSS before loading the server and any changes will cause the CSS file to be recompiled. 
 
 &nbsp;
 
@@ -14,6 +18,7 @@ To run, use the following:
 ```bash
 npm start
 ```
+_This will run the SASS compiler and then a dev server command._
 
 &nbsp;
 
